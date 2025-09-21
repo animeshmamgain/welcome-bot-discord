@@ -1,0 +1,9 @@
+services:
+  psycho-welcome-bot:
+    build: .
+    container_name: psycho-welcome-bot
+    env_file: .env
+    volumes:
+      - ./fonts:/usr/src/app/fonts:ro
+      - ./data:/usr/src/app/data
+    restart: unless-stopped

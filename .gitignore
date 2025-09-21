@@ -1,26 +1,17 @@
-# Node modules
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# dependencies
+/node_modules
 
-# Environment files
-#.env
+# env files
+#env
 
-# Logs
-logs
-*.log
+package-lock.json
 
-# OS / Editor stuff
+# OS junk
 .DS_Store
 Thumbs.db
 
-# Build / Cache
-dist/
-.cache/
-*.tmp
+# logs
+*.log
 
-# Optional: lock files (keep if you want reproducible installs)
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
+# sqlite db (optional, if you don’t want to push real data)
+data/*.db
